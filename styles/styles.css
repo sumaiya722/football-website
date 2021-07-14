@@ -9,23 +9,28 @@ body{
     display: flex;
     background-color: #2D25A0;
     justify-content: space-between;
+    width:1387px;
+    height: 599px;
     padding: 150px;
     color: white;
+}
+.entry{
+    display: grid;
 }
 .title{
     width: 485px;
     height: 230px;
     font-size: 64px;
-    padding-bottom: 27px;
 }
 .link-here{
-    width: 350px;
-    height: 120px;
-    padding: 10px 20px;
+    width: 138px;
+    height: 30px;
+    padding: 10px 10px;
     text-decoration: dashed;
     background-color: #E02C6D;
     color: white;
     margin-bottom: 27px;
+    text-align: center;
     
     
 
@@ -36,4 +41,83 @@ body{
 }
 .banner:hover{
     transform:scale(.75)  rotate(45deg);
+    transition: transform 2s ease-in-out;
 }
+/* players style  */
+.container{
+    background-color: #FFFFFF;
+    padding: 40px;
+    padding-left: 17%;
+    margin-top: 21px;
+    margin-right: 300px;
+}
+.player-details{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    width: 485px;
+}
+.player{
+    width: 330px;
+   
+    border: 3px solid rgba(128, 128, 128, 0.081);
+    background-color: rgba(128, 128, 128, 0.124);
+    padding: 10px;
+   
+}
+.player img{
+    width: 330px;
+    height: 256px;
+}
+/*--------------
+ extra part  
+ -------------*/
+.extra-part{
+    display: flex;
+    margin-left: 120px;
+    text-align: center;
+    justify-content: space-between;
+    width: 1500px;
+    height: 1000px;
+    
+}
+.love-football  img{
+    width: 400px;
+    height: 300px;
+}
+.love-club img{
+    width: 400px;
+    height: 300px;
+}
+.love-club, .love-football{
+    
+   width: 800px;
+   height: 500px;
+   padding: 20px;
+   margin: 10px;
+   border: 2px solid wheat;
+   
+}
+
+
+/*--------------
+ last part  
+ -------------*/
+ .last-part{
+     text-align: center;
+ }
+ .icon  i{
+     padding: 10px;
+ }
+ /* media queries  */
+ /* Mobile devices  */
+ @media only screen and (max-width:688px) {
+     .container, .extra-part{
+         width: 100%;
+     }
+     .love-football, .love-club, .player{
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+     }
+ }
